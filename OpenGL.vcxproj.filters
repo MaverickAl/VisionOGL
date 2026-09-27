@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{00badcf2-332f-44b7-95c0-e1394ab3206a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BaseStructs">
+      <UniqueIdentifier>{007ff9a2-2435-40ec-ad36-878ada3e7377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\WcpOglMath">
+      <UniqueIdentifier>{753cbbfc-ad2b-4de0-bbf4-7c0d7cc61d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\WcpOglUtil">
+      <UniqueIdentifier>{54849171-1689-443f-a7a5-ee42998020d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\WcpRenderer">
+      <UniqueIdentifier>{36058b88-451c-4142-893a-0e2b7943590c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\BaseStructs\Camera.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BaseStructs\CommonBase.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BaseStructs\CommonInputStructs.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BaseStructs\EntryPoint.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BaseStructs\GLBaseClass.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BaseStructs\Light.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BaseStructs\Materials.h">
+      <Filter>Source\BaseStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\BitmapDataGL.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\BloomEffect.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\BriefingBloom.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\CGShader.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\Colour.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\FBO.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\GLExt.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\GLOpenGL.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\LightGL.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\MaterialGL.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\RenderingConstants.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\ScreenBlit.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\ScreenImage.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\Skybox.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\SpecularEffect.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\Texture.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\TextureMgr.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\TgaLoader.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\TransparentEffect.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpRenderer\Viewport.h">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\TreFile.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\VariableTable.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\VariableTableMgr.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\WcpOglAssert.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\WcpOglFile.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\WcpOglPreComp.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglUtil\WcpOglUtility.h">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglMath\Matrix44.h">
+      <Filter>Source\WcpOglMath</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglMath\Vector3.h">
+      <Filter>Source\WcpOglMath</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglMath\Vector4.h">
+      <Filter>Source\WcpOglMath</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WcpOglMath\WcpOglMath.h">
+      <Filter>Source\WcpOglMath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BaseStructs\EntryPoint.cpp">
+      <Filter>Source\BaseStructs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\BitmapDataGL.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\BloomEffect.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\BriefingBloom.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\CGShader.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\CreateGL.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\FBO.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\GLExt.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\GLOpenGL.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\LightGL.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\MaterialGL.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\ScreenBlit.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\ScreenImage.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\Skybox.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\SpecularEffect.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\Texture.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\TextureMgr.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\TgaLoader.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\TransparentEffect.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpRenderer\Viewport.cpp">
+      <Filter>Source\WcpRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpOglUtil\TreFile.cpp">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpOglUtil\VariableTable.cpp">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpOglUtil\VariableTableMgr.cpp">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpOglUtil\WcpOglFile.cpp">
+      <Filter>Source\WcpOglUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WcpOglMath\Matrix44.cpp">
+      <Filter>Source\WcpOglMath</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\BaseStructs\Camera.h" />
+    <ClInclude Include="Source\BaseStructs\CommonBase.h" />
+    <ClInclude Include="Source\BaseStructs\CommonInputStructs.h" />
+    <ClInclude Include="Source\BaseStructs\EntryPoint.h" />
+    <ClInclude Include="Source\BaseStructs\GLBaseClass.h" />
+    <ClInclude Include="Source\BaseStructs\Light.h" />
+    <ClInclude Include="Source\BaseStructs\Materials.h" />
+    <ClInclude Include="Source\WcpOglMath\Matrix44.h" />
+    <ClInclude Include="Source\WcpOglMath\Vector3.h" />
+    <ClInclude Include="Source\WcpOglMath\Vector4.h" />
+    <ClInclude Include="Source\WcpOglMath\WcpOglMath.h" />
+    <ClInclude Include="Source\WcpOglUtil\TreFile.h" />
+    <ClInclude Include="Source\WcpOglUtil\VariableTable.h" />
+    <ClInclude Include="Source\WcpOglUtil\VariableTableMgr.h" />
+    <ClInclude Include="Source\WcpOglUtil\WcpOglAssert.h" />
+    <ClInclude Include="Source\WcpOglUtil\WcpOglFile.h" />
+    <ClInclude Include="Source\WcpOglUtil\WcpOglPreComp.h" />
+    <ClInclude Include="Source\WcpOglUtil\WcpOglUtility.h" />
+    <ClInclude Include="Source\WcpRenderer\BitmapDataGL.h" />
+    <ClInclude Include="Source\WcpRenderer\BloomEffect.h" />
+    <ClInclude Include="Source\WcpRenderer\BriefingBloom.h" />
+    <ClInclude Include="Source\WcpRenderer\CGShader.h" />
+    <ClInclude Include="Source\WcpRenderer\Colour.h" />
+    <ClInclude Include="Source\WcpRenderer\FBO.h" />
+    <ClInclude Include="Source\WcpRenderer\GLExt.h" />
+    <ClInclude Include="Source\WcpRenderer\GLOpenGL.h" />
+    <ClInclude Include="Source\WcpRenderer\LightGL.h" />
+    <ClInclude Include="Source\WcpRenderer\MaterialGL.h" />
+    <ClInclude Include="Source\WcpRenderer\RenderingConstants.h" />
+    <ClInclude Include="Source\WcpRenderer\ScreenBlit.h" />
+    <ClInclude Include="Source\WcpRenderer\ScreenImage.h" />
+    <ClInclude Include="Source\WcpRenderer\Skybox.h" />
+    <ClInclude Include="Source\WcpRenderer\SpecularEffect.h" />
+    <ClInclude Include="Source\WcpRenderer\Texture.h" />
+    <ClInclude Include="Source\WcpRenderer\TextureMgr.h" />
+    <ClInclude Include="Source\WcpRenderer\TgaLoader.h" />
+    <ClInclude Include="Source\WcpRenderer\TransparentEffect.h" />
+    <ClInclude Include="Source\WcpRenderer\Viewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BaseStructs\EntryPoint.cpp" />
+    <ClCompile Include="Source\WcpOglMath\Matrix44.cpp" />
+    <ClCompile Include="Source\WcpOglUtil\TreFile.cpp" />
+    <ClCompile Include="Source\WcpOglUtil\VariableTable.cpp" />
+    <ClCompile Include="Source\WcpOglUtil\VariableTableMgr.cpp" />
+    <ClCompile Include="Source\WcpOglUtil\WcpOglFile.cpp" />
+    <ClCompile Include="Source\WcpRenderer\BitmapDataGL.cpp" />
+    <ClCompile Include="Source\WcpRenderer\BloomEffect.cpp" />
+    <ClCompile Include="Source\WcpRenderer\BriefingBloom.cpp" />
+    <ClCompile Include="Source\WcpRenderer\CGShader.cpp" />
+    <ClCompile Include="Source\WcpRenderer\CreateGL.cpp" />
+    <ClCompile Include="Source\WcpRenderer\FBO.cpp" />
+    <ClCompile Include="Source\WcpRenderer\GLExt.cpp" />
+    <ClCompile Include="Source\WcpRenderer\GLOpenGL.cpp" />
+    <ClCompile Include="Source\WcpRenderer\LightGL.cpp" />
+    <ClCompile Include="Source\WcpRenderer\MaterialGL.cpp" />
+    <ClCompile Include="Source\WcpRenderer\ScreenBlit.cpp" />
+    <ClCompile Include="Source\WcpRenderer\ScreenImage.cpp" />
+    <ClCompile Include="Source\WcpRenderer\Skybox.cpp" />
+    <ClCompile Include="Source\WcpRenderer\SpecularEffect.cpp" />
+    <ClCompile Include="Source\WcpRenderer\Texture.cpp" />
+    <ClCompile Include="Source\WcpRenderer\TextureMgr.cpp" />
+    <ClCompile Include="Source\WcpRenderer\TgaLoader.cpp" />
+    <ClCompile Include="Source\WcpRenderer\TransparentEffect.cpp" />
+    <ClCompile Include="Source\WcpRenderer\Viewport.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D29C4BCA-6F4E-4FCB-BDBE-55DEEDE151AC}</ProjectGuid>
+    <RootNamespace>OpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>C:\Program Files (x86)\GOG Galaxy\Games\Wing Commander Prophecy</OutDir>
+    <IntDir>_build\$(Configuration)\</IntDir>
+    <TargetName>gl_00007</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>C:\Program Files (x86)\GOG Galaxy\Games\Wing Commander Prophecy</OutDir>
+    <IntDir>_build\$(Configuration)\</IntDir>
+    <TargetName>gl_00007</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\WcpOglUtil;$(SolutionDir)Source\WcpOglMath;$(SolutionDir)\Source\WcpRenderer;$(SolutionDir)Source\BaseStructs;;C:\Program Files (x86)\NVIDIA Corporation\Cg\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;wsock32.lib;kernel32.lib;$(CG_LIB_PATH)\cg.lib;$(CG_LIB_PATH)\cggl.lib;glu32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutputPath)\gl_00007.dll</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <Version>1.4</Version>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\WcpOglUtil;$(SolutionDir)Source\WcpOglMath;$(SolutionDir)\Source\WcpRenderer;$(SolutionDir)Source\BaseStructs;;C:\Program Files (x86)\NVIDIA Corporation\Cg\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <DebugInformationFormat />
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;wsock32.lib;kernel32.lib;$(CG_LIB_PATH)\cg.lib;$(CG_LIB_PATH)\cggl.lib;glu32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutputPath)\gl_00007.dll</OutputFile>
+      <Version>1.4</Version>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug />
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapExports>false</MapExports>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TurnOffAssemblyGeneration>false</TurnOffAssemblyGeneration>
+      <SupportUnloadOfDelayLoadedDLL>false</SupportUnloadOfDelayLoadedDLL>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
