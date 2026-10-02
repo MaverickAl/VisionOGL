@@ -48,9 +48,9 @@ m_useHDR(false),
 m_navThisFrameHack(false)
 {
 #if !STANDOFF_BUILD
-	m_glInfo = "OpenGL [v1.4]";
+	m_glInfo = "OpenGL [v1.4.1]";
 #else
-	m_glInfo = "OpenGL Standoff [v1.4]";
+	m_glInfo = "OpenGL Standoff [v1.4.1]";
 #endif
 
 	m_transVerts.reserve(MAX_TRANS_VERTS);
@@ -157,7 +157,9 @@ bool GLOpenGL::LoadInfo(const char* filename, int &width, int &height, SCALE_MOD
 	DISPLAY_DEVICE dd;
 	dd.cb = sizeof(dd);
 	bool isIntel = EnumDisplayDevices(nullptr, 0, &dd, 0) && strstr(dd.DeviceString, "Intel") != nullptr;
-	table.GetOptionalInt("windowOffset", &g_iWindowOffset, isIntel ? 1 : 0);
+	bool isAMD = EnumDisplayDevices(nullptr, 0, &dd, 0) && (strstr(dd.DeviceString, "AMD") != nullptr || strstr(dd.DeviceString, "Radeon") != nullptr || strstr(dd.DeviceString, "ATI ") != nullptr);
+
+	table.GetOptionalInt("windowOffset", &g_iWindowOffset, (isIntel || isAMD) ? 1 : 0);
 
 	g_bRequirePowerOfTwo = bForceNonPowerTwo;
 
@@ -473,7 +475,7 @@ void GLOpenGL::InitWindow(HWND window, int width, int height, int depthBits, int
 			m_windowWidth, m_windowHeight,
 			SWP_SHOWWINDOW | SWP_FRAMECHANGED);
 	}
-	#else
+	#elif 0
 
 	// Set up the window
 	if (fullscreen)
@@ -492,7 +494,32 @@ void GLOpenGL::InitWindow(HWND window, int width, int height, int depthBits, int
 			m_windowHeight,
 			SWP_SHOWWINDOW | SWP_NOMOVE);
 	}
-	#endif
+#else
+
+	// Set up the window
+	if (fullscreen)
+	{
+		SetWindowLong(m_hwnd, GWL_STYLE, 0);
+
+		SetWindowPos(m_hwnd, HWND_NOTOPMOST, 0, 0,
+			m_windowWidth + g_iWindowOffset,
+			m_windowHeight,
+			SWP_NOREDRAW);
+	}
+	else
+	{
+		DWORD style = WS_CLIPSIBLINGS | WS_CLIPCHILDREN;
+		RECT rc = { 0, 0, m_windowWidth + g_iWindowOffset, m_windowHeight };
+		AdjustWindowRectEx(&rc, style, FALSE, WS_EX_APPWINDOW);
+
+		SetWindowLong(m_hwnd, GWL_STYLE, style);
+		SetWindowLong(m_hwnd, GWL_EXSTYLE, WS_EX_APPWINDOW);
+		SetWindowPos(m_hwnd, HWND_TOP, 0, 0, rc.right - rc.left,
+			rc.bottom - rc.top,
+			SWP_SHOWWINDOW | SWP_NOMOVE | SWP_FRAMECHANGED);
+	}
+#endif
+
 
 	UpdateWindow(m_hwnd);
 	ShowWindow(m_hwnd, SW_SHOWNORMAL);
